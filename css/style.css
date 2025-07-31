@@ -76,7 +76,7 @@ a, button { cursor: none; }
 
 /* --- LISTINGS SECTION --- */
 .featured-listings { padding: 120px 0; background-color: var(--primary-dark); }
-.listings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; }
+.listings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
 .listing-card { text-decoration: none; color: var(--text-light); border-radius: 5px; overflow: hidden; transition: all 0.4s ease; background: var(--secondary-dark); }
 .listing-card:hover { transform: scale(1.03); }
 .listing-image { height: 450px; background-size: cover; background-position: center; transition: transform 0.6s ease; }
