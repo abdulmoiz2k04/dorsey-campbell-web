@@ -82,7 +82,14 @@ input:focus, textarea:focus { border-color: var(--oceanic-blue); outline: none; 
 .featured-listings, .sold-properties { padding: 120px 0; }
 .featured-listings { background-color: var(--sandstone); }
 .sold-properties { background-color: #fff; }
-.listings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; }
+.listings-grid, .blog-grid { 
+    display: grid; 
+    /* CHANGED: Adjusted minmax for better responsiveness */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem; 
+    /* ADDED: Ensures grid items are centered within the container */
+    justify-content: center;
+}
 .property-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); transition: all 0.4s ease; }
 .property-card:hover { transform: translateY(-10px); box-shadow: 0 25px 45px rgba(0,0,0,0.12); }
 .property-image-link { display: block; overflow: hidden; }
